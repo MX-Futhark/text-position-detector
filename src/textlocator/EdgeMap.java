@@ -250,7 +250,7 @@ class EdgeMap {
 
 			for (int i = -maskOffset; i <= maskOffset; ++i) {
 
-				if (x + i < 0 || x + i >= map.getHeight()) continue;
+				if (x + i < 0 || x + i >= map.getWidth()) continue;
 				int value = map.getValue(x + i, y + j),
 					previousTextMapValue =
 						textRecoveryMap.getValue(x + i, y + j);
